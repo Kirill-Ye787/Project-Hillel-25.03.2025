@@ -1,11 +1,13 @@
-import random
+numbers = [0, 1, 0, 12, 3]
 
-length = random.randint(3, 10)
-my_list = [random.randint(1, 100) for _ in range(length)]
+i = 0
+for j in range(len(numbers)):
+    if numbers[j] != 0:
+        numbers[i] = numbers[j]
+        i = i + 1
 
+while i < len(numbers):
+    numbers[i] = 0
+    i = i + 1
 
-result = [my_list[0], my_list[2], my_list[-2]]
-
-
-print("Початковий список:", my_list)
-print("Результат:", result)
+print(numbers)

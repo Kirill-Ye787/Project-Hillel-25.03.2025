@@ -1,15 +1,13 @@
-# Тест 1
-my_list = [12, 3, 4, 10]
-# → [10, 12, 3, 4]
+numbers = [0, 1, 7, 2, 4, 8]
 
-# Тест 2
-my_list = [1]
-# → [1]
+if len(numbers) == 0:
+    result = 0
+else:
+    i = 0
+    s = 0
+    while i < len(numbers):
+        s = s + numbers[i]
+        i = i + 2
+    result = s * numbers[-1]
 
-# Тест 3
-my_list = []
-# → []
-
-# Тест 4
-my_list = [12, 3, 4, 10, 8]
-# → [8, 12, 3, 4, 10]
+print(result)
