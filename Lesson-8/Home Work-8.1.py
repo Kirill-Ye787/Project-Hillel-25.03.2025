@@ -25,5 +25,5 @@ assert add_one([0]) == [1], 'Test3'
 print("Test4:", add_one([9]))  # Очікується [1, 0]
 assert add_one([9]) == [1, 0], 'Test4'
 
-print("ОК — всі тести пройдено успішно!")
+print("ОК")
 
